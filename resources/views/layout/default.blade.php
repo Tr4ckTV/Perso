@@ -92,12 +92,11 @@
             color: orange;
             border-color: orange;
         }
-        .footer {
+        footer {
             background-color: #111;
             color: #ddd;
             padding: 20px 0;
             text-align: center;
-            position: absolute;
             bottom: 0;
             width: 100%;
         }
@@ -127,9 +126,8 @@
     <div class="container">
         @yield('content')
     </div>
-
-    <div class="footer">
-        <p>&copy; 2024 Mon Site. Tous droits réservés.</p>
-    </div>
 </body>
+<footer>
+    <p>&copy; 2024 Mon Site. Tous droits réservés.</p>
+</footer>
 </html>
