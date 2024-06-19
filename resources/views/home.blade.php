@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accueil</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-
   <style>
     /* Styles CSS existants */
     body {
@@ -48,18 +47,58 @@
       width: 80px;
       height: 80px;
       border-radius: 50%;
-      background-color: #ffffff;
-      color: #000123;
-      text-align: center;
-      line-height: 80px;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 1em;
       opacity: 0;
       animation: bubble-animation 2s forwards;
       text-decoration: none;
     }
 
+    .bubble .content {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      position: relative;
+      text-align: center;
+    }
+
+    .bubble:hover .content {
+      transform: rotateY(180deg);
+    }
+
+    .bubble .front, .bubble .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .bubble .front {
+      background-color: #ffffff;
+      color: #000123;
+      transform: rotateY(0deg);
+    }
+
+    .bubble .back {
+      background-color: #000123;
+      color: #ffffff;
+      transform: rotateY(180deg);
+    }
+
+    .bubble .material-symbols-outlined {
+        font-size: 50px;
+    }
+
     img {
-      border-radius: 10px; /* Coins arrondis pour le drapeau */
+      border-radius: 10px;
     }
 
     @keyframes bubble-animation {
@@ -111,17 +150,17 @@
     }
 
     .circle {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    mix-blend-mode: screen;
-    background-image: radial-gradient(hsl(180, 100%, 80%), hsl(180, 100%, 80%) 10%, hsla(180, 100%, 80%, 0) 56%);
-    position: absolute;
-    bottom: -10%;
-    left: calc(50% - 10px);
-    animation: fade-frames 15s infinite, scale-animation 15s infinite;
-    z-index: 0;
-}
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      mix-blend-mode: screen;
+      background-image: radial-gradient(hsl(180, 100%, 80%), hsl(180, 100%, 80%) 10%, hsla(180, 100%, 80%, 0) 56%);
+      position: absolute;
+      bottom: -10%;
+      left: calc(50% - 10px);
+      animation: fade-frames 15s infinite, scale-animation 15s infinite;
+      z-index: -1;
+    }
 
     @keyframes fade-frames {
       0% {
@@ -137,18 +176,17 @@
       }
     }
 
-
     @keyframes scale-animation {
-  0% {
-    transform: translateY(0vh) scale3d(2.2, 2.2, 1);
-  }
-  50% {
-    transform: translateY(-55vh) scale3d(0.4, 0.4, 1);
-  }
-  100% {
-    transform: translateY(-110vh) scale3d(2.2, 2.2, 1);
-  }
-}
+      0% {
+        transform: translateY(0vh) scale3d(2.2, 2.2, 1);
+      }
+      50% {
+        transform: translateY(-55vh) scale3d(0.4, 0.4, 1);
+      }
+      100% {
+        transform: translateY(-110vh) scale3d(2.2, 2.2, 1);
+      }
+    }
 
     .message {
       position: absolute;
@@ -183,9 +221,24 @@
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_Belgium_%28civil%29.svg/1200px-Flag_of_Belgium_%28civil%29.svg.png" alt="Drapeau de la Belgique" width="100">
     </header>
     <div class="curve-container">
-      <a href="#" class="bubble" id="bubble1"><span class="material-symbols-outlined">school</span></a>
-      <a href="#" class="bubble" id="bubble2"><span class="material-symbols-outlined">sports_esports</span></a>
-      <a href="#" class="bubble" id="bubble3"><span class="material-symbols-outlined">emoji_objects</span></a>
+      <a href="#" class="bubble" id="bubble1">
+        <div class="content">
+          <div class="front"><span class="material-symbols-outlined">school</span></div>
+          <div class="back">Scolarité</div>
+        </div>
+      </a>
+      <a href="#" class="bubble" id="bubble2">
+        <div class="content">
+          <div class="front"><span class="material-symbols-outlined">sports_esports</span></div>
+          <div class="back">Passions</div>
+        </div>
+      </a>
+      <a href="#" class="bubble" id="bubble3">
+        <div class="content">
+          <div class="front"><span class="material-symbols-outlined">emoji_objects</span></div>
+          <div class="back">Projets</div>
+        </div>
+      </a>
     </div>
   </div>
 
