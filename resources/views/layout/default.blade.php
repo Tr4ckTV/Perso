@@ -22,8 +22,31 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 0;
+            padding: 10px 20px;
             list-style-type: none;
+            border-bottom:#ddd solid 2px;
+        }
+        .navbar-logo {
+            margin-right: auto;
+            padding: 10px;
+        }
+        .navbar-logo .material-symbols-outlined {
+            font-size: 70px;
+            vertical-align: middle;
+            color: white;
+            transition: color 0.3s ease;
+        }
+        .navbar-logo .material-symbols-outlined:hover {
+            color: orange;
+        }
+        .navbar-logo .material-symbols-outlined:visited {
+            color: white;
+        }
+        .navbar-logo .material-symbols-outlined:visited:hover {
+            color: orange;
+        }
+        .nav-links {
+            margin-right: auto;
         }
         .nav-links ul {
             list-style-type: none;
@@ -32,16 +55,42 @@
             display: flex;
         }
         .nav-links ul li {
-            margin-right: 20px; /* Espacement entre les éléments du menu */
+            margin-right: 250px;
+            text-align: center;
+        }
+        .nav-links ul li:last-child {
+            margin-right: 0;
         }
         .nav-links ul li a {
             color: white;
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s ease;
         }
-        .nav-van {
-            margin-left: auto; /* Pour aligner à droite */
-            margin-right: auto;
+        .nav-links ul li a:hover {
+            color: orange;
+        }
+        .nav-links ul li a:visited {
+            color: white;
+        }
+        .nav-links ul li a:visited:hover {
+            color: orange;
+        }
+        .nav-links ul li a .material-symbols-outlined {
+            font-size: 50px;
+            margin-bottom: 5px;
+        }
+        .contact a {
+            color: white;
+            text-decoration: none;
+            border: 2px solid white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            transition: border-color 0.3s ease, color 0.3s ease;
+        }
+        .contact a:hover {
+            color: orange;
+            border-color: orange;
         }
         .footer {
             background-color: #111;
@@ -58,25 +107,20 @@
     <div class="navbar">
         <div class="navbar-logo">
             <a href="/">
-                <li><a href="/"><span class="material-symbols-outlined">Home</span>
-                    Home
-                </a></li>
+                <span class="material-symbols-outlined">Home</span>
             </a>
         </div>
-        <div class="nav-van">
-            <nav class="nav-links">
-                <ul>
-                    <li><a href="/"><span class="material-symbols-outlined">
-                        school
-                        </span>Scolarité</a></li>
-                    <li><a href="/"><span class="material-symbols-outlined">
-                        sports_esports
-                        </span>Passions</a></li>
-                    <li><a href="/"><span class="material-symbols-outlined">
-                        emoji_objects
-                        </span>Projets</a></li>
-                </ul>
-            </nav>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#"><span class="material-symbols-outlined">school</span><br>Scolarité</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">sports_esports</span><br>Passions</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">emoji_objects</span><br>Projets</a></li>
+            </ul>
+        </nav>
+        <div class="contact">
+            <a href="/">
+                Me contacter ⮕
+            </a>
         </div>
     </div>
 
