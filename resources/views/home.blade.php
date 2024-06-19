@@ -53,7 +53,7 @@
       justify-content: center;
       font-size: 1em;
       opacity: 0;
-      animation: bubble-animation 2s forwards;
+      animation: bubble-animation 5s forwards;
       text-decoration: none;
     }
 
