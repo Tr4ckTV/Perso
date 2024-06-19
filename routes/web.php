@@ -15,17 +15,18 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
-Route::get('/education', function () {
-    return view('education');
-});
+Route::get('/scolarite', function () {
+    return view('scolarite');
+})->name('scolarite');
 
-Route::get('/passion', function () {
-    return view('passion');
-});
+Route::get('/passions', function () {
+    return view('passions');
+})->name('passions');
 
-Route::get('/projects', function () {
-    return view('projects');
-});
+Route::get('/projets', function () {
+    return view('projets');
+})->name('projets');
+
 

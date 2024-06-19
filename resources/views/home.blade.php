@@ -221,19 +221,19 @@
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_Belgium_%28civil%29.svg/1200px-Flag_of_Belgium_%28civil%29.svg.png" alt="Drapeau de la Belgique" width="100">
     </header>
     <div class="curve-container">
-      <a href="#" class="bubble" id="bubble1">
+      <a href="scolarite" class="bubble" id="bubble1">
         <div class="content">
           <div class="front"><span class="material-symbols-outlined">school</span></div>
           <div class="back">Scolarité</div>
         </div>
       </a>
-      <a href="#" class="bubble" id="bubble2">
+      <a href="passions" class="bubble" id="bubble2">
         <div class="content">
           <div class="front"><span class="material-symbols-outlined">sports_esports</span></div>
           <div class="back">Passions</div>
         </div>
       </a>
-      <a href="#" class="bubble" id="bubble3">
+      <a href="projets" class="bubble" id="bubble3">
         <div class="content">
           <div class="front"><span class="material-symbols-outlined">emoji_objects</span></div>
           <div class="back">Projets</div>

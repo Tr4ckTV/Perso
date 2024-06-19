@@ -106,19 +106,19 @@
 <body>
     <div class="navbar">
         <div class="navbar-logo">
-            <a href="/">
+            <a href="{{ route('home') }}">
                 <span class="material-symbols-outlined">Home</span>
             </a>
         </div>
         <nav class="nav-links">
             <ul>
-                <li><a href="#"><span class="material-symbols-outlined">school</span><br>Scolarité</a></li>
-                <li><a href="#"><span class="material-symbols-outlined">sports_esports</span><br>Passions</a></li>
-                <li><a href="#"><span class="material-symbols-outlined">emoji_objects</span><br>Projets</a></li>
+                <li><a href="{{ route('scolarite') }}"><span class="material-symbols-outlined">school</span><br>Scolarité</a></li>
+                <li><a href="{{ route('passions') }}"><span class="material-symbols-outlined">sports_esports</span><br>Passions</a></li>
+                <li><a href="{{ route('projets') }}"><span class="material-symbols-outlined">emoji_objects</span><br>Projets</a></li>
             </ul>
         </nav>
         <div class="contact">
-            <a href="/">
+            <a href="{{ route('home') }}">
                 Me contacter ⮕
             </a>
         </div>
