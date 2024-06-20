@@ -117,7 +117,7 @@
             </ul>
         </nav>
         <div class="contact">
-            <a href="{{ route('home') }}">
+            <a href="{{ route('contact') }}">
                 Me contacter ⮕
             </a>
         </div>

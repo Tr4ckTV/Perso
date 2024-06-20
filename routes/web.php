@@ -29,4 +29,8 @@ Route::get('/projets', function () {
     return view('projets');
 })->name('projets');
 
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
+
 
