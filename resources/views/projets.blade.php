@@ -64,7 +64,7 @@
 <div class="project-grid">
     <div class="project">
         <h2>Site Web personnel</h2>
-        <p>Site Web personnel</p>
+        <p>Site Web présentant mon parcour scolaire, </p>
         <div class="progress-bar-container">
             <div class="progress-bar green" style="width: 100%;"></div>
         </div>
@@ -72,15 +72,15 @@
 
     <div class="project">
         <h2>Bot Discord LG</h2>
-        <p>Bot Discord LG</p>
+        <p>Bot discord qui permet de faire des parties de Loup-Garou de Tiercelieux, totalement automatisé de l'attributions des rôles jusqu'à la fin de la partie</p>
         <div class="progress-bar-container">
-            <div class="progress-bar orange" style="width: 60%;"></div>
+            <div class="progress-bar orange" style="width: 80%;"></div>
         </div>
     </div>
 
     <div class="project">
         <h2>Site pour une créatrice de bijoux</h2>
-        <p>Description du projet 3...</p>
+        <p>Site Vitrine/E-commerce</p>
         <div class="progress-bar-container">
             <div class="progress-bar green" style="width: 100%;"></div>
         </div>
