@@ -1,23 +1,37 @@
 @extends('layout.default')
 
 @section('content')
-<style>/* CSS pour rendre la page de scolarité plus attrayante */
+<style>
+    /* CSS pour rendre la page de scolarité plus attrayante dans un thème sombre */
 
-.content body {
-        font-family: Arial, sans-serif;
+    .content {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         line-height: 1.6;
-        margin: 0;
+        margin: 0 auto;
         padding: 20px;
+        background-color: #121212;
+        color: #ddd;
+        max-width: 1200px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
     }
 
     .content h1 {
         text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #FFD700;
+        border-bottom: 3px solid #FFD700;
+        display: inline-block;
+        padding-bottom: 10px;
     }
 
     .content h2 {
-        color: #a5a5a5;
-        border-bottom: 2px solid #ccc;
+        color: #00a2ff;
+        border-bottom: 2px solid #00a2ff;
         padding-bottom: 5px;
+        margin-top: 40px;
+        margin-bottom: 20px;
     }
 
     .content ul {
@@ -26,28 +40,38 @@
     }
 
     .content li {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+        background-color: #1f1f1f;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .content li:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     }
 
     .content li:before {
-        color: #666;
+        content: "";
         display: inline-block;
         width: 1em;
         margin-left: -1em;
     }
 
     .content h3 {
-        margin-bottom: 5px;
-        color: #007bff;
+        margin-bottom: 10px;
+        color: #FFD700;
     }
 
     .content p {
-        color: #666;
+        color: #bbb;
     }
 
     /* Style spécial pour les projets académiques */
     .content ul li h3 {
-        color: #28a745;
+        color: #00a2ff;
     }
 
     .content ul li p {
@@ -69,9 +93,8 @@
             font-size: 14px;
         }
     }
-
-    </style>
-    <div class="content">
+</style>
+<div class="content">
     <h1>Scolarité</h1>
     <p>Bienvenue sur ma page de scolarité. Ici, vous trouverez toutes les informations concernant mon parcours académique.</p>
 
@@ -110,8 +133,16 @@
             <p>C / C++ / C# / Python / Java</p></li>
         <li><h3>Utilisation de Frameworks</h3>
             <p>Laravel / Vue.js / Node.js / Symfony</p></li>
-        <li><h3>Analyse de statistiques et calcul de probabilités</h3>
-        <li><h3>Utilisation d'une méthode scientifique</h3>
+        <li><h3>Maths</h3>
+            <p>- Calculs de probabilités et statistiques</p>
+            <p>- Arithmétiques / Algèbre</p>
+            <p>- Théorie des jeux</p>
+            <p>- ...</p></li>
+        <li><h3>Sciences</h3>
+            <p>- Intermédiaire : Biologie / Chimie / Physique</p>
+            <p>- Génétique</p>
+            <p>- Chimie inorganique</p>
+            <p>- Géologie</p></li>
     </ul>
 
     <h2>Projets Académiques</h2>
