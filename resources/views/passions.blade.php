@@ -60,6 +60,22 @@
         height: 100%;
         object-fit: cover;
     }
+
+    @media (max-width: 997px) {
+        .passion-image::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 75%;
+        width: 60%;
+        height: 100%;
+        background-color: #00010c;
+        z-index: 2;
+        transform: skew(-20deg);
+        visibility:hidden
+    }
+
+        }
 </style>
 
 

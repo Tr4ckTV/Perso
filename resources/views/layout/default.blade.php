@@ -24,7 +24,7 @@
             align-items: center;
             padding: 10px 20px;
             list-style-type: none;
-            border-bottom:#ddd solid 2px;
+            border-bottom: #ddd solid 2px;
         }
         .navbar-logo {
             margin-right: auto;
@@ -100,13 +100,77 @@
             bottom: 0;
             width: 100%;
         }
+
+        @media (max-width: 997px) {
+            .logo {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+            .nav-links {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+            .nav-links ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav-links ul li {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact {
+                margin-top: 20px;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav-links {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+            .nav-links ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav-links ul li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            .navbar-logo .material-symbols-outlined {
+                font-size: 50px;
+            }
+            .nav-links ul li a .material-symbols-outlined {
+                font-size: 30px;
+            }
+            .nav-links ul li a {
+                font-size: 14px;
+            }
+            .contact a {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="navbar">
         <div class="navbar-logo">
             <a href="{{ route('home') }}">
-                <span class="material-symbols-outlined">Home</span>
+                <span class="material-symbols-outlined">home</span>
             </a>
         </div>
         <nav class="nav-links">
